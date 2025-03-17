@@ -3,7 +3,23 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio Version 17
 VisualStudioVersion = 17.5.33516.290
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ProvaPub", "ProvaPub.csproj", "{BF0C6C17-A860-47B0-BF84-1FBB2E26742A}"
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Solution Items", "Solution Items", "{222699B1-AD4D-4CD6-BC68-8E3E30D37B4F}"
+	ProjectSection(SolutionItems) = preProject
+		.dockerignore = .dockerignore
+		docker-compose.yml = docker-compose.yml
+	EndProjectSection
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ProvaPub.Application", "ProvaPub.Application\ProvaPub.Application.csproj", "{CFC7683E-BB0D-4B80-9D65-C6385A462613}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ProvaPub.Domain", "ProvaPub.Domain\ProvaPub.Domain.csproj", "{4C5D1250-AC3B-4BC3-89C3-1E42F440BBC5}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ProvaPub.Infra.Data", "ProvaPub.Data\ProvaPub.Infra.Data.csproj", "{C319C08E-D155-4339-99BC-4C52428AD918}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ProvaPub.Infra.IoC", "ProvaPub.IoC\ProvaPub.Infra.IoC.csproj", "{E212A164-A0DE-4EC0-A2DF-DEC766C74D11}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ProvaPub.Api", "ProvaPub.Api\ProvaPub.Api.csproj", "{7BB1B322-491B-4E64-8508-4D31E9752DE4}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ProvaPub.UnitTests", "ProvaPub.UnitTests\ProvaPub.UnitTests.csproj", "{8181B07D-63E6-458D-8F90-A1B475F43C83}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -11,10 +27,30 @@ Global
 		Release|Any CPU = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(ProjectConfigurationPlatforms) = postSolution
-		{BF0C6C17-A860-47B0-BF84-1FBB2E26742A}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
-		{BF0C6C17-A860-47B0-BF84-1FBB2E26742A}.Debug|Any CPU.Build.0 = Debug|Any CPU
-		{BF0C6C17-A860-47B0-BF84-1FBB2E26742A}.Release|Any CPU.ActiveCfg = Release|Any CPU
-		{BF0C6C17-A860-47B0-BF84-1FBB2E26742A}.Release|Any CPU.Build.0 = Release|Any CPU
+		{CFC7683E-BB0D-4B80-9D65-C6385A462613}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{CFC7683E-BB0D-4B80-9D65-C6385A462613}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{CFC7683E-BB0D-4B80-9D65-C6385A462613}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{CFC7683E-BB0D-4B80-9D65-C6385A462613}.Release|Any CPU.Build.0 = Release|Any CPU
+		{4C5D1250-AC3B-4BC3-89C3-1E42F440BBC5}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{4C5D1250-AC3B-4BC3-89C3-1E42F440BBC5}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{4C5D1250-AC3B-4BC3-89C3-1E42F440BBC5}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{4C5D1250-AC3B-4BC3-89C3-1E42F440BBC5}.Release|Any CPU.Build.0 = Release|Any CPU
+		{C319C08E-D155-4339-99BC-4C52428AD918}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{C319C08E-D155-4339-99BC-4C52428AD918}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{C319C08E-D155-4339-99BC-4C52428AD918}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{C319C08E-D155-4339-99BC-4C52428AD918}.Release|Any CPU.Build.0 = Release|Any CPU
+		{E212A164-A0DE-4EC0-A2DF-DEC766C74D11}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{E212A164-A0DE-4EC0-A2DF-DEC766C74D11}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{E212A164-A0DE-4EC0-A2DF-DEC766C74D11}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{E212A164-A0DE-4EC0-A2DF-DEC766C74D11}.Release|Any CPU.Build.0 = Release|Any CPU
+		{7BB1B322-491B-4E64-8508-4D31E9752DE4}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{7BB1B322-491B-4E64-8508-4D31E9752DE4}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{7BB1B322-491B-4E64-8508-4D31E9752DE4}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{7BB1B322-491B-4E64-8508-4D31E9752DE4}.Release|Any CPU.Build.0 = Release|Any CPU
+		{8181B07D-63E6-458D-8F90-A1B475F43C83}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{8181B07D-63E6-458D-8F90-A1B475F43C83}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{8181B07D-63E6-458D-8F90-A1B475F43C83}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{8181B07D-63E6-458D-8F90-A1B475F43C83}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
